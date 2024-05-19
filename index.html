@@ -2,61 +2,94 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href ="./CSS/home.css">
+        <!-- REMIXICONS -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href ="./css/index.css">
         <title>Brian Hsiao Website</title>
     </head>
-    <body>
-        <nav class="navigation">
-            <ul>
-                <li><a id="nav1" href="#Page1" class="current">HOME</a></li>
-                <li><a id="nav2" href="#Page2">ABOUT</a></li>
-                <li><a id="nav3" href="#Page3">OTHER</a></li>
-            </ul>
+    <!-- Header -->
+    <header class="header">
+        <!-- Navigation Menu -->
+        <nav class="nav_container">
+            <div class="nav_data">
+                <a href="#" class="nav_logo">
+                    <img src="./images/Logo/name.png" alt="name_logo.png" class="name_logo">
+                </a>
+                <!-- Navigation Drop Down -->
+                <div class="nav_dropdown" id="nav_dropdown">
+                    <i class="ri-menu-line nav_open"></i>
+                    <i class="ri-close-line nav_close"></i>
+                </div>
+            </div>
+            <div class="nav_menu" id="nav_menu">
+                <!-- Navigation List -->
+                <ul class="nav_list">
+                    <li><a href="#" class="nav_link">Home</a></li>
+                    <li><a href="#about" class="nav_link">About</a></li>
+                    <li><a href="#portfolio" class="nav_link">Portfolio</a></li>
+                </ul>
+            </div>
         </nav>
-        <div id="Page1" class="Page1">
-            <div class="homeName">
+    </header>
+    <!-- Body -->
+    <body>
+        <!-- Section 1 Home -->
+        <div class="home_container" id="home">
+            <div class="home_data">
                 <h1>Brian Hsiao</h1>
                 <hr>
                 <h3>Computer Science Graduate</h3>
             </div>
         </div>
-        <div id="Page2" class="Page2">
-            <div class="page2L">
-                <div class="headshot">
-                    <img alt="headshot" src="./Images/Headshot.jpg">
+        <!-- Section 2 About Me -->
+        <div class="about_container" id="about">
+            <div class="about_data">
+                <!-- Introduction -->
+                <div class="about_intro">
+                    <img src="./images/Headshot.jpg" alt="about_selfie.png" class="about_selfie">
+                    <div class="about_intro_text">
+                        <p>
+                            <br><br>
+                            Hi there, I'm Brian<br><br>
+                            A curious and self-disciplined graduate who majored in computer science with eagerness in pursuing knowledge in the field. 
+                            Having a passion for exploring and perservering the innovating and developing field of the technologial industry.
+                            Alongside a collabrative and problem solving mind set to assist in any scenario.
+                        </p>
+                    </div>
                 </div>
-                <div class="summaryText">
-                    <p>
-                        Curious and self-disciplined graduate majoring in computer science with eagerness in pursuing knowledge in the
-                        field. Having a passion for being an explorer and having the perseverance to innovate and endure the developing
-                        field. Alongside an adaptable problem solving skill set and being collaborative to perform well in a team.
-                    </p>
-                </div>
-            </div>
-            <div class="page2R">
-                <div class="graduateInfo">
-                    <h4>Graduate of Queens College</h4>
-                    <ul>
-                        <li>Majored in Computer Science <br>[Bachelors in Science]<hr></li>
-                        <li>Graduated with Departmental Honors, <br>Cum Laude Honors with a 3.7 GPA<hr></li>
-                        <li>Taken classes in: 
-                            <br>-  -  -  -  -  -  -
-                            <br>Internet and Web Technologies 
-                            <br>Object-Oriented Programming<hr></li>
-                    </ul>
-                </div>
-                <div class="QCImage">
-                    <img alt="Queens College" src="./Images/QueensCollege.jpg">
+                <!-- Education -->
+                <div class="about_education">
+                    <div class="about_education_text">
+                        <p>
+                            <b>Graduate of Queens College</b><br><br>
+                            Bachelor's Degree in Computer Science Bachelor in Science<br><br>
+                            Graduated with Departmental Honors, Cum Laude Honors with a 3.7 GPA <br><br>
+                            Taken classes in: <br>
+                            Object-Oriented Programming<br>
+                            Genetic Algorithm<br>
+                            Internet and Web Technologies 
+                        </p>
+                    </div>
+                    <img src="./images/QueensCollege.jpg" alt="about_school.png" class="about_school">
                 </div>
             </div>
         </div>
-        <div id="Page3" class="Page3">
-            <h3>Others</h3>
-            <ul>
-                <li><a href="https://github.com/bhsaio145"><img alt="Github_Logo" src="./Images/Logo_GitHub_32px.png"></a></li>
-                <li><a href="https://www.linkedin.com/in/brianhsiao2001"><img alt="LinkedIn_Logo" src="./Images/Logo_LinkedIn_32px.png"></a></li>
-            </ul>
+        <!-- Section 3 Portfolio -->
+        <div class="portfolio_container" id="portfolio">
+            <div class="portfolio_data">
+                <h3>Portfolio</h3>
+                <a href="https://github.com/bhsaio145/Blackjack" target="_blank"><img src="./images/Captures/Blackjack.PNG" alt="portfolio_blackjack.png" class="portfolio_image"></a>
+                <a href="https://github.com/bhsaio145/WeatherForecast" target="_blank"><img src="./images/Captures/WeatherForecast.PNG" alt="portfolio_blackjack.png" class="portfolio_image"></a>
+            </div>
         </div>
+        <!-- JS -->
+        <script src="./js/index.js"></script>
     </body>
-    <script src="./JS/home.js"></script>
+    <!-- Footer -->
+    <footer>
+        <a href="https://github.com/bhsaio145" target="_blank"><img src="./images/Logo/GitHub_32px.png" alt="github_logo.png"></a>
+        <a href="https://www.linkedin.com/in/brianhsiao2001/" target="_blank"><img src="./images/Logo/Logo_LinkedIn_32px.png" alt="linkedin_logo.png"></a>
+        <p>coded by Brian Hsiao</p>
+    </footer>
 </html>
