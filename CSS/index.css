@@ -235,6 +235,7 @@ body{
 
 .about_education img{
     max-height: 350px;
+    max-width: 300px;
     margin: 35px 3vw 0px 3vw;
 }
 
