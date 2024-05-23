@@ -153,7 +153,7 @@ body{
 
 /* Home */
 .home_container{
-    background-image: url("../images/Fuji_bg.png");
+    background-image: url("Fuji_bg.png");
     background-size: cover;
     background-position: center;
     width: 100%;
